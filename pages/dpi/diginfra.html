@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Public Infrastructure</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://i.ibb.co/LDzn3vbg/image-removebg-preview-1.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex shadow-md py-4 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-50">
+        <div class="flex flex-wrap items-center justify-between gap-5 w-full">
+            <a href="javascript:void(0)" class="max-sm:hidden"><img
+                    src="https://img1.wsimg.com/isteam/ip/5e44b9aa-ce5e-40a6-8b98-ff28f753417e/Digital_India.png" alt="
+                    logo" class="w-36" /></a>
+            <a href="javascript:void(0)" class="hidden max-sm:block"><img
+                    src="https://i.ibb.co/LDzn3vbg/image-removebg-preview-1.png" alt="logo" class="w-9" /></a>
+
+            <div id="collapseMenu"
+                class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
+                <button id="toggleClose"
+                    class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border border-gray-200 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                        viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+                <ul
+                    class="lg:flex gap-x-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+                    <li class="mb-6 hidden max-lg:block">
+                        <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo"
+                                class="w-36" />
+                        </a>
+                    </li>
+                    <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                        <a href='../../index.html'
+                            class="hover:text-blue-700 text-blue-700 block font-medium text-[15px]">Home</a>
+                    </li>
+                    <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='../dpi/diginfra.html'
+                            class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">DPI</a>
+                    </li>
+                    <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='../tech/tech.html'
+                            class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">Technology</a>
+                    </li>
+                    <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='../ism/ism.html'
+                            class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">ISM</a>
+                    </li>
+                    <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='../natinfra/natinfra.html'
+                            class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">Infrastructure</a>
+                    </li>
+                    <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='../polgov/polgov.html'
+                            class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">Policies</a>
+                    </li>
+                    <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='../sectdig/sectdig.html'
+                            class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">Digitalization</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex max-lg:ml-auto space-x-4">
+
+                <button id="toggleOpen" class="lg:hidden cursor-pointer">
+                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+
+    <h1 class="text-3xl font-semibold text-center mx-auto">The Power of DPI: India's Digital Foundations</h1>
+    <p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">Open Network for Digital Commerce (ONDC) is an open protocol connecting buyers, sellers, and platforms to democratize India's e-commerce.</p>
+    <div class="flex items-center gap-2 h-[400px] w-full max-w-4xl mt-10 mx-auto">
+        <div
+            class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+            <img class="h-full w-full object-cover object-center"
+                src="https://www.icicibank.com/content/dam/icicibank/india/managed-assets/revamp-page-images/cards/recurring-deposits/mobile-banking-b-d.webp"
+                alt="image">
+        </div>
+        <div
+            class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+            <img class="h-full w-full object-cover object-center"
+                src="https://d6xcmfyh68wv8.cloudfront.net/learn-content/uploads/2024/06/digital-payments-india-definition-methods-importance-770x515.webp"
+                alt="image">
+        </div>
+        <div
+            class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+            <img class="h-full w-full object-cover object-center"
+                src="https://s3.ap-south-1.amazonaws.com/prod-easebuzz-static/static/base/assets_aug_2021/img/easebuzz/easebuzz-explainer/explainers-payments/digital-payments-in-india/digital-payments-in-india.png"
+                alt="image">
+        </div>
+        <div
+            class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+            <img class="h-full w-full object-cover object-center"
+                src="https://media.assettype.com/outlookbusiness/2025-09-30/rvu0b8cv/shrutilead20251001.jpg?w=640&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0"
+                alt="image">
+        </div>
+        <div
+            class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+            <img class="h-full w-full object-cover object-center"
+                src="https://static.startuptalky.com/2025/07/Best-Mobile-Wallets-In-India-StartupTalky.jpg"
+                alt="image">
+        </div>
+        <div
+            class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+            <img class="h-full w-full object-cover object-center"
+                src="https://www.icicibank.com/content/dam/icicibank/icici-assets/nri-edge/upi-article-banner.webp"
+                alt="image">
+        </div>
+    </div>
+
+    <br><br>
+
+    <div style="z-index: 2;"
+        class="relative before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-60 before:z-10">
+        <img src="https://readymadeui.com/cardImg.webp" alt="Banner Image"
+            class="absolute inset-0 w-full h-full object-cover" />
+        <div class="px-6 py-16">
+            <div class="relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center">
+                <h2 class="text-4xl font-semibold mb-20 text-center text-white">Digital Public Infrastructure (DPI)</h2>
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 max-lg:gap-12">
+                    <div class="text-center">
+                        <h3 class="text-white text-4xl font-semibold">138Cr+</h3>
+                        <div class="mt-6">
+                            <h6 class="text-base text-white font-medium">Aadhar Generated</h6>
+                            <p class="leading-relaxed text-[15px] text-slate-300 mt-3">Aadhar</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-white text-4xl font-semibold">848.56Cr+</h3>
+                        <div class="mt-6">
+                            <h6 class="text-base text-white font-medium">Documents Issued</h6>
+                            <p class="leading-relaxed text-[15px] text-slate-300 mt-3">DigiLocker</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-white text-4xl font-semibold">20B+</h3>
+                        <div class="mt-6">
+                            <h6 class="text-base text-white font-medium">Transactions in August 25</h6>
+                            <p class="leading-relaxed text-[15px] text-slate-300 mt-3">UPI</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-white text-4xl font-semibold">100M+</h3>
+                        <div class="mt-6">
+                            <h6 class="text-base text-white font-medium">Transactions in past 6 months</h6>
+                            <p class="leading-relaxed text-[15px] text-slate-300 mt-3">ONDC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="p-4">
+        <div class="max-w-6xl max-lg:max-w-3xl max-sm:max-w-sm mx-auto">
+            <div class="max-w-md mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900 text-center !leading-tight mb-16">Know More!</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                <div
+                    class="bg-white overflow-hidden [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+                    <div class="bg-gray-50 aspect-[22/13]">
+                        <img src="https://w3assets.angelone.in/wp-content/uploads/1759985194051-UPI-races-ahead-accounts-for-750x393.jpg"
+                            alt="Blog Post 1" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="px-2 mt-6">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-3">Unified Payments Interface (UPI)</h3>
+                        <p class="text-slate-600 text-[15px] leading-relaxed line-clamp-2">Instant, real-time bank
+                            payments via a mobile phone application.</p>
+                        <a onclick="window.open('https://www.npci.org.in/product/uhttpspi', '_blank')"
+                            class="mt-6 inline-block px-4 py-1.5 tracking-wider bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium">Read
+                            More</a>
+                    </div>
+                    <br>
+                </div>
+
+                <div
+                    class="bg-white overflow-hidden [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+                    <div class="bg-gray-50 aspect-[22/13]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-TFjVGYEgjeUO2-mk8cGKRezJ9vOTmNY6A&s"
+                            alt="Blog Post 1" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="px-2 mt-6">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-3">Aadhaar</h3>
+                        <p class="text-slate-600 text-[15px] leading-relaxed line-clamp-2">Aadhaar is India's 12-digit
+                            unique biometric identity number for residents.</p>
+                        <a onclick="window.open('https://uidai.gov.in/', '_blank')"
+                            class="mt-6 inline-block px-4 py-1.5 tracking-wider bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium">Read
+                            More</a>
+                    </div>
+                    <br>
+                </div>
+
+                <div
+                    class="bg-white overflow-hidden [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+                    <div class="bg-gray-50 aspect-[22/13]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtkJm0Q2YNvKCVyca17ggHl_YNGJHeWDVKQ&s"
+                            alt="Blog Post 1" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="px-2 mt-6">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-3">DigiLocker</h3>
+                        <p class="text-slate-600 text-[15px] leading-relaxed line-clamp-2">DigiLocker is a secure,
+                            official digital document wallet for Indian citizens.</p>
+                        <a onclick="window.open('https://www.digilocker.gov.in/', '_blank')"
+                            class="mt-6 inline-block px-4 py-1.5 tracking-wider bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium">Read
+                            More</a>
+                    </div>
+                    <br>
+                </div>
+
+                <div
+                    class="bg-white overflow-hidden [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+                    <div class="bg-gray-50 aspect-[22/13]">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Blog Post 1" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="px-2 mt-6">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-3">Open Network for Digital Commerce (ONDC)
+                        </h3>
+                        <p class="text-slate-600 text-[15px] leading-relaxed line-clamp-2">A public open protocol for
+                            all e-commerce transactions.</p>
+                        <a onclick="window.open('https://ondc.org/', '_blank')"
+                            class="mt-6 inline-block px-4 py-1.5 tracking-wider bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium">Read
+                            More</a>
+                    </div>
+                    <br>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="tracking-wide bg-slate-100 px-8 sm:px-12 pt-12 pb-6">
+    <div class="grid min-[1200px]:grid-cols-3 gap-12 xl:gap-16">
+      <div class="min-[1200px]:max-w-sm max-w-lg w-full">
+        <a href='javascript:void(0)'>
+          <img src="https://img1.wsimg.com/isteam/ip/5e44b9aa-ce5e-40a6-8b98-ff28f753417e/Digital_India.png" alt="logo" class="w-36" />
+        </a>
+        <div class="mt-6">
+          <p class="text-slate-600 leading-relaxed text-sm">Digital India is a flagship programme of the Government of India, launched on July 1, 2015, by Honourable Prime Minister Shri Narendra Modi with the vision to transform India into a digitally empowered society and knowledge economy. Digital India has been improving the lives of all citizens through the digital delivery of services, expanding the digital economy and employment opportunities.</p>
+        </div>
+        
+      </div>
+
+      <div class="min-[1200px]:col-span-2 grid sm:grid-cols-2 lg:grid-cols-6 gap-8">
+        <div class="max-lg:min-w-[80px]">
+          <h4 class="text-slate-900 font-semibold text-base relative">DPI</h4>
+
+          <ul class="mt-6 space-y-4">
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">UPI</a>
+            </li>
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">Aadhaar</a>
+            </li>
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">DigiLocker</a>
+            </li>
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">ONDC</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="max-lg:min-w-[80px]">
+          <h4 class="text-slate-900 font-semibold text-base relative">Technology</h4>
+
+          <ul class="mt-6 space-y-4">
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">India Ai</a>
+            </li>
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">DOT</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="max-lg:min-w-[80px]">
+          <h4 class="text-slate-900 font-semibold text-base relative">ISM</h4>
+
+          <ul class="mt-6 space-y-4">
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">Mission</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="max-lg:min-w-[80px]">
+          <h4 class="text-slate-900 font-semibold text-base relative">Infrastructure</h4>
+          <ul class="space-y-4 mt-6">
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">BharatNet</a>
+            </li>
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">Vande Bharat</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="max-lg:min-w-[80px]">
+          <h4 class="text-slate-900 font-semibold text-base relative">Policies</h4>
+
+          <ul class="space-y-4 mt-6">
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">Karmayogi Bharat</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="max-lg:min-w-[80px]">
+          <h4 class="text-slate-900 font-semibold text-base relative">Sectoral Digitalization</h4>
+
+          <ul class="space-y-4 mt-6">
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">Ayushman Bharat</a>
+            </li>
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">DIKSHA</a>
+            </li>
+            <li>
+              <a href='javascript:void(0)' class="hover:text-slate-900 text-slate-600 text-sm font-normal">eCourts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mt-10 mb-6 border-gray-300" />
+
+    <div class="flex flex-wrap max-md:flex-col gap-4">
+      <p class="text-slate-600 text-sm md:ml-auto">An Entry from AISG-43 GGN.<br>Advik S. Bankar, Shoubhit Maji</p>
+      
+    </div>
+  </footer>
+
+
+    <section class="py-2 text-white text-right px-10"
+        style="z-index: 5; position: sticky; bottom: 0; background-color: #00a24b; z-index: 4;">
+        <p class="mx-3">An entry from<span class="mx-3 font-semibold">AISG-43 GGN</span>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
